@@ -3,7 +3,9 @@ package basic;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class Topic_02_Data_Type {
 
@@ -44,12 +46,17 @@ public class Topic_02_Data_Type {
 		//Class
 		Topic_02_Data_Type topic =new Topic_02_Data_Type();
 		//Interface
-		WebDriver driver;
+		WebDriver driver = null;
 		//Collection: List
 		List <String> addresses = new ArrayList<String>();
 		//String- Chuỗi kí tự
 		String name = "Automation !@#456789";
-
+		String cityname = new String("Ho Chi Minh");
+		
+		WebElement emailTextbox = driver.findElement(By.cssSelector(""));
+		
+		List<WebElement> checkboxes = driver.findElements(By.tagName("input"));
+		
 	}
 
 }
