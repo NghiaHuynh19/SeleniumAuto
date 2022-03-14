@@ -42,8 +42,9 @@ public class Topic_05_Element_PartIII_Login {
 		driver.findElement(passwordTextboxBy).clear();
 		driver.findElement(loginButtonBy).click();
 		
-		//Verify
-		Assert
+		//Verify Error message displayed
+		Assert.assertEquals(driver.findElement(By.id("advice-required-entry-email")).getText(),"This is a required field.");
+		Assert.assertEquals(driver.findElement(By.id("advice-required-entry-pass")).getText(),"This is a required field.");
 
 
 
