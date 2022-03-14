@@ -3,6 +3,7 @@ package webdriver;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -77,16 +78,53 @@ public class Topic_05_Element_Part_I {
 		//Thường dùng để test GUI: front/ color/ size/ location/ position/...
 		// Đều lấy ra các thuộc tính của Css được
 		element.getCssValue("");
+		
 		element.getLocation();
 		element.getRect();
-		element.getScreenshotAs(OutputType.BASE64);
+		Dimension elementSize = element.getSize();
+		//Chụp hình lại của element lại lưu bằng format nào đó
+		String base64Image = element.getScreenshotAs(OutputType.BASE64);
 		element.getScreenshotAs(OutputType.BYTES);
 		element.getScreenshotAs(OutputType.FILE);
-		element.getSize();
+		
 		element.getTagName();
 		
 		//Lấy ra text của element
 		element.getText();
+		//Lấy ra tên thẻ (html)
+		element = driver.findElement(By.xpath("//input[@id='email']"));
+		element = driver.findElement(By.cssSelector("input[id='email']"));
+		String elementTagname = element.getTagName(); 
+		//Kiểm tra 1 element có hiển thị hay ko - tất cả các loại element
+		//Người dùng có thể nhìn thấy được
+		
+		//Mong đợi nó hiển thị
+		Assert.assertTrue(element.isDisplayed());
+		
+		//Mong đợi nó không hiển thị
+		Assert.assertFalse(element.isDisplayed());
+		
+		//Kiểm tra 1 element có thể thao tác được hay không
+		//Read-only hoặc disable element
+		
+		//Mong đợi nó thao tác được (enable)
+		Assert.assertTrue(element.isEnabled());
+		//Mong đợi nó bị disable/ read-only/ ko thao tác được
+		Assert.assertFalse(element.isEnabled());
+		
+		//Kiểm tra 1 element đã được hay chưa
+		//Radio button/ Checkbox/ Dropdown
+		element.isSelected();
+		
+		//Mong đợi nó đã được chọn rồi
+		Assert.assertTrue(element.isSelected());
+		
+		//Mong đợi nó chưa chọn/ bỏ chọn đi 
+		Assert.assertFalse(element.isSelected());
+		
+		//Tương ứng với hành động là nhấn phím ENTER trên bàn phím
+		// Chỉ dùng với element là form hoặc nằm trong form
+		element.submit();
 		
 	}
 
