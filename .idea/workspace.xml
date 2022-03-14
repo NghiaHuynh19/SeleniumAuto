@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_PartIII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-webdriver-java-testng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-webdriver-java-testng.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_PartII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_PartII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_Part_I.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_Part_I.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_PartIII_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_PartIII_Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,43 +25,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="TestNG.Topic_05_Element_PartIII">
-    <configuration name="Topic_03_Default_Value" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-webdriver-java-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="basic" />
-      <option name="MAIN_CLASS_NAME" value="basic.Topic_03_Default_Value" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_05_Element_PartII" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-webdriver-java-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_05_Element_PartII" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Topic_05_Element_PartIII_Login.TC_02_Invalid_Email">
     <configuration name="Topic_05_Element_PartIII (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -94,6 +56,42 @@
       <option name="PACKAGE_NAME" value="webdriver" />
       <option name="MAIN_CLASS_NAME" value="webdriver.Topic_05_Element_PartIII" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_05_Element_PartIII_Login.Login_01_Empty_Data" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-webdriver-java-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_05_Element_PartIII_Login" />
+      <option name="METHOD_NAME" value="Login_01_Empty_Data" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_05_Element_PartIII_Login.TC_02_Invalid_Email" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-webdriver-java-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_05_Element_PartIII_Login" />
+      <option name="METHOD_NAME" value="TC_02_Invalid_Email" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -138,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_05_Element_PartIII_Login.TC_02_Invalid_Email" />
+        <item itemvalue="TestNG.Topic_05_Element_PartIII_Login.Login_01_Empty_Data" />
         <item itemvalue="TestNG.Topic_05_Element_PartIII" />
         <item itemvalue="TestNG.Topic_05_Element_PartIII (1)" />
         <item itemvalue="TestNG.Topic_05_Element_PartIII.TC_01_Register_Empty_Data" />
-        <item itemvalue="TestNG.Topic_05_Element_PartII" />
-        <item itemvalue="TestNG.Topic_03_Default_Value" />
       </list>
     </recent_temporary>
   </component>

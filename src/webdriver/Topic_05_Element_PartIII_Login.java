@@ -52,7 +52,12 @@ public class Topic_05_Element_PartIII_Login {
 
 	@Test
 	public void TC_02_Invalid_Email() {
-		
+		driver.findElement(emailTextboxBy).sendKeys("546@3453.4543");
+		driver.findElement(passwordTextboxBy).sendKeys("123456");
+		driver.findElement(loginButtonBy).click();
+
+		//Verify Error message displayed
+		Assert.assertEquals(driver.findElement(By.id("advice-validate-email-email")).getText(),"Please enter a valid email address. For example johndoe@domain.com.");
 	}
 
 	@Test
