@@ -1,5 +1,6 @@
 package webdriver;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -13,79 +14,116 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Topic_05_Element_PartIII_Login {
-	WebDriver driver;
-	String projectPath = System.getProperty("user.dir");
-	
-	By emailTextboxBy = By.id("email");
-	By passwordTextboxBy = By.id("pass");
-	By loginButtonBy = By.id("send2");
+    WebDriver driver;
+    String projectPath = System.getProperty("user.dir");
+    String firstName, lastName, fullName, emailAddress, password;
+    // Global variable
+    By emailTextboxBy = By.id("email");
+    By passwordTextboxBy = By.id("pass");
+    By loginButtonBy = By.id("send2");
 
-	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-		driver = new FirefoxDriver();
-		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+    @BeforeClass
+    public void beforeClass() {
+        System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+        driver = new FirefoxDriver();
+        firstName = "Steve";
+        lastName = "Job";
+        fullName = firstName + " " + lastName;
+        emailAddress = "stevejob" + getRandomNumber() + "@hotmail.net";
+        password = "123456789";
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
 
-	}
-	
-	@BeforeMethod
-	public void beforeMethod() {
-		driver.get("http://live.techpanda.org/index.php/");
-		driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
-	}
+    }
 
-	@Test
-	public void Login_01_Empty_Data() {
-		driver.findElement(emailTextboxBy).clear();
-		driver.findElement(passwordTextboxBy).clear();
-		driver.findElement(loginButtonBy).click();
-		
-		//Verify Error message displayed
-		Assert.assertEquals(driver.findElement(By.id("advice-required-entry-email")).getText(),"This is a required field.");
-		Assert.assertEquals(driver.findElement(By.id("advice-required-entry-pass")).getText(),"This is a required field.");
+    @BeforeMethod
+    public void beforeMethod() {
+        driver.get("http://live.techpanda.org/index.php/");
+        driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
+    }
+
+    @Test
+    public void Login_01_Empty_Data() {
+        driver.findElement(emailTextboxBy).clear();
+        driver.findElement(passwordTextboxBy).clear();
+        driver.findElement(loginButtonBy).click();
+
+        //Verify Error message displayed
+        Assert.assertEquals(driver.findElement(By.id("advice-required-entry-email")).getText(), "This is a required field.");
+        Assert.assertEquals(driver.findElement(By.id("advice-required-entry-pass")).getText(), "This is a required field.");
 
 
+    }
 
-	}
+    @Test
+    public void Login_02_Invalid_Email() {
+        driver.findElement(emailTextboxBy).sendKeys("546@3453.4543");
+        driver.findElement(passwordTextboxBy).sendKeys("123456");
+        driver.findElement(loginButtonBy).click();
 
-	@Test
-	public void TC_02_Invalid_Email() {
-		driver.findElement(emailTextboxBy).sendKeys("546@3453.4543");
-		driver.findElement(passwordTextboxBy).sendKeys("123456");
-		driver.findElement(loginButtonBy).click();
+        //Verify Error message displayed
+        Assert.assertEquals(driver.findElement(By.id("advice-validate-email-email")).getText(), "Please enter a valid email address. For example johndoe@domain.com.");
+    }
 
-		//Verify Error message displayed
-		Assert.assertEquals(driver.findElement(By.id("advice-validate-email-email")).getText(),"Please enter a valid email address. For example johndoe@domain.com.");
-	}
+    @Test
+    public void Login_03_Invalid_Password() {
+        driver.findElement(emailTextboxBy).sendKeys("automationfc@gmail.net");
+        driver.findElement(passwordTextboxBy).sendKeys("111");
+        driver.findElement(loginButtonBy).click();
 
-	@Test
-	public void TC_03_Incorrect_Confirm_Email() {
-		
-	}
-	
-	@Test
-	public void TC_04_Invalid_Password() {
-		
-	}
-	
-	@Test
-	public void TC_05_Invalid_Phone() {
-		
-		
-	}
+        //Verify Error message displayed
+        Assert.assertEquals(driver.findElement(By.id("advice-validate-password-pass")).getText(), "Please enter 6 or more characters without leading or trailing spaces.");
 
-	@AfterClass
-	public void afterClass() {
-		driver.quit();
-	}
-	
-	public void sleepInSecond(long second) {
-		try {
-			Thread.sleep(second * 1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
+    }
+
+    @Test
+    public void Login_04_Create_New_Account_Success() {
+        driver.findElement(By.xpath("//a[@title='Create an Account']")).click();
+
+        // Existed Email
+        driver.findElement(By.id("firstname")).sendKeys(firstName);
+        driver.findElement(By.id("lastname")).sendKeys(lastName);
+        driver.findElement(By.id("email_address")).sendKeys(emailAddress);
+        driver.findElement(By.id("password")).sendKeys(password);
+        driver.findElement(By.id("confirmation")).sendKeys(password);
+
+        driver.findElement(By.xpath("//button[@title='Register']")).click();
+
+
+    }
+
+    @Test
+    public void Login_05_Incorrect_Email_Or_Password() {
+        //Existed Email + incorrect Password -> Unsuccess
+        driver.findElement(emailTextboxBy).sendKeys("automationfc@gmail.net");
+        driver.findElement(passwordTextboxBy).sendKeys("111");
+        driver.findElement(loginButtonBy).click();
+
+        //Non existed Email + correct/ valid Password -> Unsuccess
+    }
+
+    @Test
+    public void Login_06_Valid_Email_And_Password() {
+
+
+    }
+
+
+    @AfterClass
+    public void afterClass() {
+        driver.quit();
+    }
+
+    public void sleepInSecond(long second) {
+        try {
+            Thread.sleep(second * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    public int getRandomNumber(){
+        Random rand = new Random();
+        return rand.nextInt(9999);
+
+    }
 }
