@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 public class Topic_05_Element_PartIII_Login {
     WebDriver driver;
     String projectPath = System.getProperty("user.dir");
-    String firstName, lastName, fullName, emailAddress, password;
+    String firstName, lastName, fullName, emailAddress, password, nonExistedEmailAddress;
     // Global variable
     By emailTextboxBy = By.id("email");
     By passwordTextboxBy = By.id("pass");
@@ -30,6 +30,7 @@ public class Topic_05_Element_PartIII_Login {
         lastName = "Job";
         fullName = firstName + " " + lastName;
         emailAddress = "stevejob" + getRandomNumber() + "@hotmail.net";
+        nonExistedEmailAddress = "stevejob" + getRandomNumber() + "@yopmail.com";
         password = "123456789";
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -88,6 +89,21 @@ public class Topic_05_Element_PartIII_Login {
         driver.findElement(By.id("confirmation")).sendKeys(password);
 
         driver.findElement(By.xpath("//button[@title='Register']")).click();
+        
+        //Verify
+       Assert.assertEquals(driver.findElement(By.cssSelector("div.page-title>h1")).getText(), "MY DASHBOARD");
+       Assert.assertEquals(driver.findElement(By.cssSelector("li.success-msg span")).getText(), "Thank you for registering with Main Website Store.");
+       Assert.assertEquals(driver.findElement(By.cssSelector("div.welcome-msg strong")).getText(), "Hello, "+ fullName +"!");
+       
+       String contactInformation = driver.findElement(By.xpath("//h3[text()='Contact Information']/parent::div/following-sibling::div/p")).getText();
+       Assert.assertTrue(contactInformation.contains(fullName));
+       Assert.assertTrue(contactInformation.contains(emailAddress));
+       
+       driver.findElement(By.xpath("//header[@id='header']//span[text()='Account']")).click();
+       driver.findElement(By.xpath("//a[@title='Log Out']")).click();
+       
+       Assert.assertTrue(driver.findElement(By.cssSelector("div.page-title img[src$= 'logo.png']")).isDisplayed());
+       
 
 
     }
@@ -95,16 +111,36 @@ public class Topic_05_Element_PartIII_Login {
     @Test
     public void Login_05_Incorrect_Email_Or_Password() {
         //Existed Email + incorrect Password -> Unsuccess
-        driver.findElement(emailTextboxBy).sendKeys("automationfc@gmail.net");
-        driver.findElement(passwordTextboxBy).sendKeys("111");
+        driver.findElement(emailTextboxBy).sendKeys(emailAddress);
+        driver.findElement(passwordTextboxBy).sendKeys("123456");
         driver.findElement(loginButtonBy).click();
+        
+        Assert.assertEquals(driver.findElement(By.cssSelector("li.error-msg span")).getText(), "Invalid login or password.");
+        
 
         //Non existed Email + correct/ valid Password -> Unsuccess
+        driver.findElement(emailTextboxBy).clear();
+        driver.findElement(emailTextboxBy).sendKeys(nonExistedEmailAddress);
+        
+        driver.findElement(passwordTextboxBy).clear();
+        driver.findElement(passwordTextboxBy).sendKeys(password);
+        driver.findElement(loginButtonBy).click();
+        
+        Assert.assertEquals(driver.findElement(By.cssSelector("li.error-msg span")).getText(), "Invalid login or password.");
     }
 
     @Test
     public void Login_06_Valid_Email_And_Password() {
-
+    	driver.findElement(emailTextboxBy).sendKeys(emailAddress);
+    	driver.findElement(passwordTextboxBy).sendKeys(password);
+        driver.findElement(loginButtonBy).click();
+        
+        Assert.assertEquals(driver.findElement(By.cssSelector("div.page-title>h1")).getText(), "MY DASHBOARD");
+        Assert.assertEquals(driver.findElement(By.cssSelector("div.welcome-msg strong")).getText(), "Hello, "+ fullName +"!");
+        
+        String contactInformation = driver.findElement(By.xpath("//h3[text()='Contact Information']/parent::div/following-sibling::div/p")).getText();
+        Assert.assertTrue(contactInformation.contains(fullName));
+        Assert.assertTrue(contactInformation.contains(emailAddress));
 
     }
 
