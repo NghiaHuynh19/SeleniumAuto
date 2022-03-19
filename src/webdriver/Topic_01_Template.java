@@ -20,7 +20,7 @@ public class Topic_01_Template {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://www.facebook.com/");
+		
 	}
 
 	@Test
