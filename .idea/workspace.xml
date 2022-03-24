@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_PartIII_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_05_Element_PartIII_Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,26 +31,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="tasks" />
   </component>
-  <component name="RunManager" selected="TestNG.Topic_05_Element_PartIII_Login.Login_04_Create_New_Account_Success">
-    <configuration name="Topic_05_Element_PartIII" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-webdriver-java-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_05_Element_PartIII" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Topic_06_Textbox_TextArea">
     <configuration name="Topic_05_Element_PartIII_Login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -141,17 +123,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Topic_06_Textbox_TextArea" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-webdriver-java-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_Textbox_TextArea" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_06_Textbox_TextArea" />
         <item itemvalue="TestNG.Topic_05_Element_PartIII_Login.Login_04_Create_New_Account_Success" />
         <item itemvalue="TestNG.Topic_05_Element_PartIII_Login" />
         <item itemvalue="TestNG.Topic_05_Element_PartIII_Login.TC_02_Invalid_Email" />
         <item itemvalue="TestNG.Topic_05_Element_PartIII_Login.Login_01_Empty_Data" />
-        <item itemvalue="TestNG.Topic_05_Element_PartIII" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\huynh\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="" />
