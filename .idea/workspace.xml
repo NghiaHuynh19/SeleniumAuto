@@ -42,7 +42,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="TestNG.Topic_08_Custom_Dropdown.TC_05_Angular_Enter">
+  <component name="RunManager" selected="TestNG.Topic_09_Button_Default_Radio_Checkbox.TC_03_Default_Checkbox">
     <configuration name="Topic_05_Element_PartII.TC_03" type="TestNG" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -72,24 +72,6 @@
       <option name="PACKAGE_NAME" value="webdriver" />
       <option name="MAIN_CLASS_NAME" value="webdriver.Topic_08_Custom_Dropdown" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_08_Custom_Dropdown.TC_01_JQuerry" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-webdriver-java-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_08_Custom_Dropdown" />
-      <option name="METHOD_NAME" value="TC_01_JQuerry" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -150,13 +132,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Topic_09_Button_Default_Radio_Checkbox.TC_03_Default_Checkbox" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-webdriver-java-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_09_Button_Default_Radio_Checkbox" />
+      <option name="METHOD_NAME" value="TC_03_Default_Checkbox" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_09_Button_Default_Radio_Checkbox.TC_03_Default_Checkbox" />
         <item itemvalue="TestNG.Topic_08_Custom_Dropdown.TC_05_Angular_Enter" />
         <item itemvalue="TestNG.Topic_08_Custom_Dropdown.TC_03_React" />
         <item itemvalue="TestNG.Topic_08_Custom_Dropdown.TC_02_React" />
         <item itemvalue="TestNG.Topic_08_Custom_Dropdown" />
-        <item itemvalue="TestNG.Topic_08_Custom_Dropdown.TC_01_JQuerry" />
       </list>
     </recent_temporary>
   </component>
