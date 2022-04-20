@@ -27,6 +27,21 @@ public class Topic_10_Alert {
 	}
 
 	@Test
+	public void TC_00_Login_Empty_Data(){
+		driver.get("https://demo.guru99.com/V4/index.php");
+
+		driver.findElement(By.name("btnLogin")).click();
+		sleepInSecond(3);
+
+		alert = driver.switchTo().alert();
+
+		Assert.assertEquals(alert.getText(), "User or Password is not valid");
+
+		alert.accept();
+		sleepInSecond(3);
+	}
+
+	@Test
 	public void TC_01_Accept_Alert() {
 		driver.get("https://automationfc.github.io/basic-form/");
 
@@ -42,20 +57,49 @@ public class Topic_10_Alert {
 		sleepInSecond(3);
 		
 		Assert.assertEquals(driver.findElement(By.cssSelector("p#result")).getText(), "You clicked an alert successfully");
-		
-		
-		
-		
 	}
 
 	@Test
-	public void TC_02() {
-		
+	public void TC_02_Confirm_Alert() {
+		driver.get("https://automationfc.github.io/basic-form/");
+
+		driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
+		sleepInSecond(3);
+
+		// Switch qua Alert
+		alert = driver.switchTo().alert();
+
+		Assert.assertEquals(alert.getText(), "I am a JS Confirm");
+
+		// Cancel an Alert
+		alert.dismiss();
+		sleepInSecond(3);
+
+		Assert.assertEquals(driver.findElement(By.cssSelector("p#result")).getText(), "You clicked: Cancel");
 	}
 
 	@Test
-	public void TC_03() {
-		
+	public void TC_03_Prompt_Alert() {
+		driver.get("https://automationfc.github.io/basic-form/");
+
+		String textToSendkey = "Nghia Huynh";
+
+		driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
+		sleepInSecond(3);
+
+		// Switch qua Alert
+		alert = driver.switchTo().alert();
+
+		Assert.assertEquals(alert.getText(), "I am a JS prompt");
+
+		// Nhập text
+		alert.sendKeys(textToSendkey);
+
+		// Accept an Alert
+		alert.accept();
+		sleepInSecond(3);
+
+		Assert.assertEquals(driver.findElement(By.cssSelector("p#result")).getText(), "You entered: "+ textToSendkey);
 	}
 
 	@AfterClass
