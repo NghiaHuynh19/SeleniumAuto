@@ -126,12 +126,6 @@ public class Topic_06_Textbox_TextArea {
         //Verify
         Assert.assertEquals(driver.findElement(By.id("immigration_number")).getAttribute("value"), "31995855");
         Assert.assertEquals(driver.findElement(By.cssSelector("textarea#immigration_comments")).getAttribute("value"), "Nghia's\nPassport\nID");
-        
-        
-        
-        
-
-
 
     }
 
