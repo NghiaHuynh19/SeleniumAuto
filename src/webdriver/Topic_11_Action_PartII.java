@@ -100,14 +100,17 @@ public class Topic_11_Action_PartII {
 	}
 
 	@Test
-	public void TC_04_Drag_And_Drop_HTML5_Css() {
+	public void TC_04_Drag_And_Drop_HTML5_Css() throws IOException {
 		driver.get("https://automationfc.github.io/drag-drop-html5/");
 
-		WebElement squareA = driver.findElement(By.id("column-a"));
-		WebElement squareB = driver.findElement(By.id("column-b"));
+		String squareA = "column-a";
+		String squareB = "column-b";
 
-		action.dragAndDrop(squareA, squareB).perform();
-		sleepInSecond(5);
+		// Lấy được toàn bộ nội dung trong file này ra
+		String dragDropHelperContent = getContentFile(projectPath + "\\dragAndDrop\\drag_and_drop_helper.js");
+
+		dragDropHelperContent = dragDropHelperContent + "$(\"" + squareA + "\").simulateDragDrop({ dropTarget: \"" + squareB + "\"});";
+		jsExecutor.executeScript(dragDropHelperContent);
 
 
 	}
