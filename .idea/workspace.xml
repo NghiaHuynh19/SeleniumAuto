@@ -3,85 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="Topic 11 Part 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/basic/Topic_01_System_Property.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/basic/Topic_02_Data_Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/basic/Topic_03_Default_Value.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/basic/Topic_04_Random_Data.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/geckodriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/geckodriver_linux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/geckodriver_mac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/msedgedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_01_Template.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_03_Run_On_Multiple_Browser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_04_Browser_PartI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_04_Browser_PartII.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_05_Element_PartII.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_05_Element_PartIII_Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_05_Element_PartIII_Register.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_05_Element_Part_I.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_06_Textbox_TextArea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_07_Default_Dropdown.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_08_Custom_Dropdown.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_09_Button_Default_Radio_Checkbox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/bin/webdriver/Topic_10_Alert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/browserDrivers/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/browserDrivers/geckodriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/browserDrivers/geckodriver_linux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/browserDrivers/geckodriver_mac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/browserDrivers/msedgedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/javaTester/basic/Topic_01_System_Property.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/javaTester/basic/Topic_02_Data_Type.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/javaTester/basic/Topic_03_Default_Value.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/javaTester/basic/Topic_04_Random_Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/libraries/client-combined-3.141.59-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/libraries/client-combined-3.141.59.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/libraries/selenium-server-standalone-3.141.59.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/libraries/testng-6.14.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/selenium-webdriver-java-testng.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_01_Template.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_03_Run_On_Multiple_Browser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_04_Browser_PartI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_04_Browser_PartII.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_05_Element_PartII.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_05_Element_PartIII_Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_05_Element_PartIII_Register.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_05_Element_Part_I.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_06_Textbox_TextArea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_07_Default_Dropdown.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_08_Custom_Dropdown.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_09_Button_Default_Radio_Checkbox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/src/webdriver/Topic_10_Alert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/Default suite/Default test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/Default suite/Default test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/Default suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/junitreports/TEST-webdriver.Topic_10_Alert.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/Default test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/Default suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumAuto/test-output/testng.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_11_Action_PartII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_11_Action_PartII.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +59,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_11_Action_PartII.TC_04_Drag_And_Drop_HTML5_Css">
+  <component name="RunManager" selected="TestNG.Topic_11_Action_PartII.TC_05_Drag_And_Drop_HTML5_Xpath">
     <configuration name="Topic_05_Element_PartII.TC_03" type="TestNG" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -229,7 +150,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_11_Action_Part_I.TC_04_Click_And_Hold_Random" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_11_Action_PartII.TC_05_Drag_And_Drop_HTML5_Xpath" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -238,8 +159,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_11_Action_Part_I" />
-      <option name="METHOD_NAME" value="TC_04_Click_And_Hold_Random" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_11_Action_PartII" />
+      <option name="METHOD_NAME" value="TC_05_Drag_And_Drop_HTML5_Xpath" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -249,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_11_Action_PartII.TC_05_Drag_And_Drop_HTML5_Xpath" />
         <item itemvalue="TestNG.Topic_11_Action_PartII.TC_04_Drag_And_Drop_HTML5_Css" />
         <item itemvalue="TestNG.Topic_11_Action_PartII.TC_03_Drag_And_Drop_HTML4" />
         <item itemvalue="TestNG.Topic_11_Action_PartII.TC_02_Right_Click" />
         <item itemvalue="TestNG.Topic_11_Action_PartII.TC_01_Right_Click" />
-        <item itemvalue="TestNG.Topic_11_Action_Part_I.TC_04_Click_And_Hold_Random" />
       </list>
     </recent_temporary>
   </component>
