@@ -23,7 +23,7 @@ public class Topic_12_Fix_Popup {
 		driver = new FirefoxDriver();
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		
 	}
 
@@ -107,11 +107,12 @@ public class Topic_12_Fix_Popup {
 		driver.findElement(By.xpath("//form[@id ='formTrack' ] //button[text()='Tra cứu vận đơn']")).click();
 		sleepInSecond(3);
 
-		/*WebElement scrollbillCode = driver.findElement(By.xpath("/h5"));
-		jsExecutor.executeScript("arguments[0].scrollIntoView(true);",scrollbillCode );
-		sleepInSecond(2);*/
+		WebElement scrollbillCode = driver.findElement(By.xpath("//h5"));
 
-		Assert.assertTrue(driver.findElement(By.xpath("/h5")).getText().contains(billCode));
+		jsExecutor.executeScript("arguments[0].scrollIntoView(true);",scrollbillCode );
+		sleepInSecond(2);
+
+		Assert.assertTrue(driver.findElement(By.xpath("//h5")).getText().contains(billCode));
 
 
 

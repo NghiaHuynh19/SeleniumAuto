@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="Topic 11 Part 2 DONE">
+    <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="Topic 12 DONE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_06_Textbox_TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_06_Textbox_TextArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_12_Fix_Popup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_12_Fix_Popup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_11_Action_PartII.TC_05_Drag_And_Drop_HTML5_Xpath">
+  <component name="RunManager" selected="TestNG.Topic_13_Frame_Iframe.TC_03_HDFC">
     <configuration name="Topic_05_Element_PartII.TC_03" type="TestNG" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -77,7 +79,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_11_Action_PartII.TC_05_Drag_And_Drop_HTML5_Xpath" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_08_Custom_Dropdown.TC_01_JQuerry" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +88,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_11_Action_PartII" />
-      <option name="METHOD_NAME" value="TC_05_Drag_And_Drop_HTML5_Xpath" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_08_Custom_Dropdown" />
+      <option name="METHOD_NAME" value="TC_01_JQuerry" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -113,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_12_Random_Popup.TC_01_In_DOM_VNK" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_13_Frame_Iframe.TC_01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -122,8 +124,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_12_Random_Popup" />
-      <option name="METHOD_NAME" value="TC_01_In_DOM_VNK" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_13_Frame_Iframe" />
+      <option name="METHOD_NAME" value="TC_01" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -131,7 +133,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_12_Random_Popup.TC_02_KMPlayer" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_13_Frame_Iframe.TC_01_Kyna" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -140,8 +142,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_12_Random_Popup" />
-      <option name="METHOD_NAME" value="TC_02_KMPlayer" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_13_Frame_Iframe" />
+      <option name="METHOD_NAME" value="TC_01_Kyna" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -149,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_12_Random_Popup.TC_03_Random_Not_In_DOM_DeHieu" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_13_Frame_Iframe.TC_03_HDFC" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -158,8 +160,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_12_Random_Popup" />
-      <option name="METHOD_NAME" value="TC_03_Random_Not_In_DOM_DeHieu" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_13_Frame_Iframe" />
+      <option name="METHOD_NAME" value="TC_03_HDFC" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -169,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Topic_11_Action_PartII.TC_05_Drag_And_Drop_HTML5_Xpath" />
-        <item itemvalue="TestNG.Topic_12_Random_Popup.TC_03_Random_Not_In_DOM_DeHieu" />
+        <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_03_HDFC" />
+        <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_01_Kyna" />
+        <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_01" />
         <item itemvalue="TestNG.Topic_12_Fix_Popup.TC_03_JTExpress" />
-        <item itemvalue="TestNG.Topic_12_Random_Popup.TC_02_KMPlayer" />
-        <item itemvalue="TestNG.Topic_12_Random_Popup.TC_01_In_DOM_VNK" />
+        <item itemvalue="TestNG.Topic_08_Custom_Dropdown.TC_01_JQuerry" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651275837401</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Topic 12 DONE">
+      <created>1651883634870</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651883634870</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +266,8 @@
     <MESSAGE value="Topic 11 Done" />
     <MESSAGE value="Topic 11 Part 2" />
     <MESSAGE value="Topic 11 Part 2 DONE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Topic 11 Part 2 DONE" />
+    <MESSAGE value="Topic 12 DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Topic 12 DONE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -130,8 +130,12 @@ public class Topic_06_Textbox_TextArea {
     }
 
     @Test
-    public void TC_02() {
+    public void TC_02_Register_Guru99() {
+        driver.get("http://demo.guru99.com/v4");
 
+        driver.findElement(By.xpath("//a[text()='here']")).click();
+
+        driver.findElement(By.name("emailid")).sendKeys();
     }
 
     @Test
