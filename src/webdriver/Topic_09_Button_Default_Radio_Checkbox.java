@@ -203,7 +203,7 @@ public class Topic_09_Button_Default_Radio_Checkbox {
 		// 1 element phải defiine tới 2 locator
 		// Dễ bị nhầm lẫn: Team member họ dùng -> hiểu nhầm
 		// Bảo trì: Code nhiều
-		By winterCheckboxInput = By.cssSelector("input[value='Winter']");
+		By summerCheckboxInput = By.cssSelector("input[value='Summer']");
 
 		// Case 1: Dùng thẻ input
 		// Selenium click(); -> ElementNotInteractableException
@@ -221,10 +221,10 @@ public class Topic_09_Button_Default_Radio_Checkbox {
 		// Javascript - click
 		// sSelected() - verify
 
-		clickByJavascript(winterCheckboxInput);
+		clickByJavascript(summerCheckboxInput);
 		sleepInSecond(2);
 
-		Assert.assertTrue(driver.findElement(winterCheckboxInput).isSelected());
+		Assert.assertTrue(driver.findElement(summerCheckboxInput).isSelected());
 	}
 	
 	@Test
