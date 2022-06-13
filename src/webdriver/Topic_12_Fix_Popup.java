@@ -1,6 +1,7 @@
 package webdriver;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -86,7 +87,7 @@ public class Topic_12_Fix_Popup {
 		Assert.assertFalse(loginPopup.isDisplayed());
 	}
 
-	@Test
+	/*@Test
 	public void TC_03_JTExpress() {
 		driver.get("https://jtexpress.vn/");
 
@@ -99,7 +100,7 @@ public class Topic_12_Fix_Popup {
 		sleepInSecond(2);
 
 		// Verify login popup is not displayed
-		Assert.assertFalse(driver.findElement(homeSliderPopup).isDisplayed());*/
+		Assert.assertFalse(driver.findElement(homeSliderPopup).isDisplayed());
 
 		String billCode = "840000598444";
 
@@ -116,8 +117,34 @@ public class Topic_12_Fix_Popup {
 
 
 
-	}
+	}*/
+	@Test
+	public void TC_03_Fix_In_DOM() {
+		driver.get("https://kyna.vn/");
 
+		WebElement loginPopup = driver.findElement(By.cssSelector("div#k-popup-account-login"));
+
+		// Undisplayed
+		Assert.assertFalse(loginPopup.isDisplayed());
+		
+		// Click
+		driver.findElement(By.cssSelector("a.login-btn")).click();
+		sleepInSecond(3);
+
+		// Displayed
+		Assert.assertTrue(loginPopup.isDisplayed());
+		driver.findElement(By.cssSelector("input#user-login")).sendKeys("minhnghia@gmail.com");
+		driver.findElement(By.cssSelector("input#user-password")).sendKeys("12345678kk@");
+		driver.findElement(By.cssSelector("button#btn-submit-login")).click();
+		sleepInSecond(3);
+
+		Assert.assertEquals(driver.findElement(By.cssSelector("div#password-form-login-message")).getText(),"Sai tên đăng nhập hoặc mật khẩu");
+
+		driver.findElement(By.cssSelector("button.k-popup-account-close")).click();
+
+		// Undisplayed
+		Assert.assertFalse(loginPopup.isDisplayed());
+	}
 	@AfterClass
 	public void afterClass() {
 		driver.quit();

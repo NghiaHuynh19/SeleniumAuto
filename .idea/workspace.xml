@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="Topic 13 Ifarme DONE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_09_Button_Default_Radio_Checkbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_09_Button_Default_Radio_Checkbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_12_Fix_Popup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_12_Fix_Popup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_09_Button_Default_Radio_Checkbox.TC_05_Custom_Radio">
+  <component name="RunManager" selected="TestNG.Topic_12_Fix_Popup.TC_03_Fix_In_DOM">
     <configuration name="Topic_05_Element_PartII.TC_03" type="TestNG" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -114,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_13_Frame_Iframe.TC_01" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_12_Fix_Popup.TC_03_Fix_In_DOM" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -123,8 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_13_Frame_Iframe" />
-      <option name="METHOD_NAME" value="TC_01" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_12_Fix_Popup" />
+      <option name="METHOD_NAME" value="TC_03_Fix_In_DOM" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -170,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_12_Fix_Popup.TC_03_Fix_In_DOM" />
         <item itemvalue="TestNG.Topic_09_Button_Default_Radio_Checkbox.TC_05_Custom_Radio" />
         <item itemvalue="TestNG.Topic_09_Button_Default_Radio_Checkbox.TC_02_Default_Radio" />
         <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_03_HDFC" />
         <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_01_Kyna" />
-        <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_01" />
       </list>
     </recent_temporary>
   </component>
