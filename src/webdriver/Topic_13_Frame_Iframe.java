@@ -27,7 +27,7 @@ public class Topic_13_Frame_Iframe {
 	}
 
 	@Test
-	public void TC_01_Kyna() {
+	public void TC_01_Iframe_Kyna() {
 		// A
 		driver.get("https://kyna.vn/");
 
@@ -83,7 +83,7 @@ public class Topic_13_Frame_Iframe {
 	}
 
 	@Test
-	public void TC_03_HDFC() {
+	public void TC_03_Frame_HDFC() {
 		//A
 		driver.get("https://netbanking.hdfcbank.com/netbanking/");
 

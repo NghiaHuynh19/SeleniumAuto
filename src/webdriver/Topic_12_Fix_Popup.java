@@ -11,6 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Topic_12_Fix_Popup {
@@ -144,6 +145,38 @@ public class Topic_12_Fix_Popup {
 
 		// Undisplayed
 		Assert.assertFalse(loginPopup.isDisplayed());
+	}
+	@Test
+	public void TC_04_Fix_Not_In_DOM_Tiki() {
+		driver.get("https://tiki.vn/");
+
+		// Trong trường hợp popup ko có trong DOM thì findElements này sẽ tìm thấy 0 element
+		// Và cũng chờ hết timeout của impliciWait nhưng ko đánh fail testcase và cũng ko show Exception
+		// Emty list = 0 element
+		List<WebElement> loginPopup = driver.findElements(By.cssSelector("div.ReactModal__Content"));
+
+		// Undisplayed
+		Assert.assertEquals(loginPopup.size(), 0);
+
+		// Click vào Đăng nhập để show popup lên
+		driver.findElement(By.xpath("//span[text()='Đăng Nhập / Đăng Ký']")).click();
+		sleepInSecond(3);
+
+		// Displayed (Single element: findElement)
+		Assert.assertTrue(driver.findElement(By.cssSelector("div.ReactModal__Content")).isDisplayed());
+
+		// Displayed (Single element: findElements)
+		loginPopup = driver.findElements(By.cssSelector("div.ReactModal__Content"));
+		Assert.assertEquals(loginPopup.size(),1);
+		Assert.assertTrue(loginPopup.get(0).isDisplayed());
+
+		// Click để đóng popup
+		driver.findElement(By.cssSelector("img.close-img")).click();
+		sleepInSecond(3);
+
+		// Undisplayed
+		loginPopup = driver.findElements(By.cssSelector("div.ReactModal__Content"));
+		Assert.assertEquals(loginPopup.size(),0);
 	}
 	@AfterClass
 	public void afterClass() {

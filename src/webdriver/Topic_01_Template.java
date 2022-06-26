@@ -13,13 +13,18 @@ import org.testng.annotations.Test;
 public class Topic_01_Template {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
+	String osName = System.getProperty("os.name");
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+		if (osName.contains("Mac OS")) { // MacOS
+			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver.exe");
+		} else { // Windows
+			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+		}
+
 		driver = new FirefoxDriver();
-		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
 	}

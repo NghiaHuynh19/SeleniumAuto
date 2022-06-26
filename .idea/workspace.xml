@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="Topic 13 Ifarme DONE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_01_Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_01_Template.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_12_Fix_Popup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_12_Fix_Popup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_13_Frame_Iframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_13_Frame_Iframe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +49,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="TODO_SCOPE" value="All Places" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_12_Fix_Popup.TC_03_Fix_In_DOM">
+  <component name="RunManager" selected="TestNG.Topic_14_Windows_Tab.TC_01_Basic_Form">
     <configuration name="Topic_05_Element_PartII.TC_03" type="TestNG" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -71,42 +72,6 @@
       <option name="PACKAGE_NAME" value="webdriver" />
       <option name="MAIN_CLASS_NAME" value="webdriver.Topic_05_Element_PartII" />
       <option name="METHOD_NAME" value="TC_03" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_09_Button_Default_Radio_Checkbox.TC_02_Default_Radio" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-webdriver-java-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_09_Button_Default_Radio_Checkbox" />
-      <option name="METHOD_NAME" value="TC_02_Default_Radio" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_09_Button_Default_Radio_Checkbox.TC_05_Custom_Radio" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-webdriver-java-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_09_Button_Default_Radio_Checkbox" />
-      <option name="METHOD_NAME" value="TC_05_Custom_Radio" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_13_Frame_Iframe.TC_01_Kyna" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_12_Fix_Popup.TC_04_Fix_Not_In_DOM_Tiki" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -141,8 +106,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_13_Frame_Iframe" />
-      <option name="METHOD_NAME" value="TC_01_Kyna" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_12_Fix_Popup" />
+      <option name="METHOD_NAME" value="TC_04_Fix_Not_In_DOM_Tiki" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -150,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_13_Frame_Iframe.TC_03_HDFC" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_13_Frame_Iframe.TC_03_Frame_HDFC" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -160,7 +125,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
       <option name="MAIN_CLASS_NAME" value="webdriver.Topic_13_Frame_Iframe" />
-      <option name="METHOD_NAME" value="TC_03_HDFC" />
+      <option name="METHOD_NAME" value="TC_03_Frame_HDFC" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_14_Windows_Tab.TC_01_Basic_Form" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-webdriver-java-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_14_Windows_Tab" />
+      <option name="METHOD_NAME" value="TC_01_Basic_Form" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_14_Windows_Tab.TC_02_TechPanda" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-webdriver-java-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_14_Windows_Tab" />
+      <option name="METHOD_NAME" value="TC_02_TechPanda" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -170,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_14_Windows_Tab.TC_01_Basic_Form" />
+        <item itemvalue="TestNG.Topic_14_Windows_Tab.TC_02_TechPanda" />
+        <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_03_Frame_HDFC" />
+        <item itemvalue="TestNG.Topic_12_Fix_Popup.TC_04_Fix_Not_In_DOM_Tiki" />
         <item itemvalue="TestNG.Topic_12_Fix_Popup.TC_03_Fix_In_DOM" />
-        <item itemvalue="TestNG.Topic_09_Button_Default_Radio_Checkbox.TC_05_Custom_Radio" />
-        <item itemvalue="TestNG.Topic_09_Button_Default_Radio_Checkbox.TC_02_Default_Radio" />
-        <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_03_HDFC" />
-        <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_01_Kyna" />
       </list>
     </recent_temporary>
   </component>
