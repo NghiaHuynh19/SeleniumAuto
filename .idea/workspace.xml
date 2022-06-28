@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="Topic 13 Ifarme DONE" />
+    <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="Topic 13 Ifarme DONE">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_14_Windows_Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_14_Windows_Tab.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +58,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_14_Windows_Tab.TC_01_Basic_Form">
+  <component name="RunManager" selected="TestNG.Topic_14_Windows_Tab.TC_03_Cambirdge_Dictonary">
     <configuration name="Topic_05_Element_PartII.TC_03" type="TestNG" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -67,24 +70,6 @@
       <option name="PACKAGE_NAME" value="webdriver" />
       <option name="MAIN_CLASS_NAME" value="webdriver.Topic_05_Element_PartII" />
       <option name="METHOD_NAME" value="TC_03" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_12_Fix_Popup.TC_03_Fix_In_DOM" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-webdriver-java-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_12_Fix_Popup" />
-      <option name="METHOD_NAME" value="TC_03_Fix_In_DOM" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -164,13 +149,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Topic_14_Windows_Tab.TC_03_Cambirdge_Dictonary" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-webdriver-java-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_14_Windows_Tab" />
+      <option name="METHOD_NAME" value="TC_03_Cambirdge_Dictonary" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_14_Windows_Tab.TC_03_Cambirdge_Dictonary" />
         <item itemvalue="TestNG.Topic_14_Windows_Tab.TC_01_Basic_Form" />
         <item itemvalue="TestNG.Topic_14_Windows_Tab.TC_02_TechPanda" />
         <item itemvalue="TestNG.Topic_13_Frame_Iframe.TC_03_Frame_HDFC" />
         <item itemvalue="TestNG.Topic_12_Fix_Popup.TC_04_Fix_Not_In_DOM_Tiki" />
-        <item itemvalue="TestNG.Topic_12_Fix_Popup.TC_03_Fix_In_DOM" />
       </list>
     </recent_temporary>
   </component>

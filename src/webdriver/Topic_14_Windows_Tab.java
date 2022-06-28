@@ -103,8 +103,37 @@ public class Topic_14_Windows_Tab {
 	}
 
 	@Test
-	public void TC_03() {
-		
+	public void TC_03_Cambirdge_Dictonary() {
+		// Đang ở trang Home
+		driver.get("https://dictionary.cambridge.org/vi/");
+
+		driver.findElement(By.xpath("//header[@id='header']//span[text()='Đăng nhập']")).click();
+		sleepInSecond(3);
+
+		// Switch qua trang Login
+		switchToWindowByTitle("Login");
+
+		// Login
+		driver.findElement(By.xpath("//input[@value='Log in']")).click();
+
+		Assert.assertEquals(driver.findElement(By.xpath("//form[@id='gigya-login-form']//input[@name='username']/following-sibling::span")).getText(),"This field is required");
+		Assert.assertEquals(driver.findElement(By.xpath("//form[@id='gigya-login-form']//input[@name='password']/following-sibling::span")).getText(),"This field is required");
+
+		driver.findElement(By.xpath("//form[@id='gigya-login-form']//input[@name='username']")).sendKeys("automationfc.com@gmail.com");
+		driver.findElement(By.xpath("//form[@id='gigya-login-form']//input[@name='password']")).sendKeys("Automation000***");
+		sleepInSecond(3);
+		driver.findElement(By.xpath("//input[@value='Log in']")).click();
+
+		// Business nó tự close đi và nhảy về trang trước đó
+		// Driver nó vẫn đang ở trang Login
+
+		// Swtich qua trang Home
+		switchToWindowByTitle("Cambridge Dictionary | Từ điển tiếng Anh, Bản dịch & Từ điển từ đồng nghĩa");
+		sleepInSecond(3);
+
+		// Verify login thành công
+		Assert.assertEquals(driver.findElement(By.cssSelector("header#header span.cdo-username")).getText(),"Automation FC");
+
 	}
 
 	// Nó chỉ dùng cho duy nhất 2 tab/ window
