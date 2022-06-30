@@ -13,6 +13,17 @@ public class Topic_16_Upload_Sendkey {
 	String projectPath = System.getProperty("user.dir");
 	String osName = System.getProperty("os.name");
 
+	// Img name
+	String vietnam = "VietNam.jpg";
+	String thailand = "Thailand.jpg";
+	String indonesia = "Indonesia.jpg";
+
+	// Img path
+	String vietnamFilePath = projectPath + "/uploadFiles/" + vietnam;
+	String thailanFilePath = projectPath + "/uploadFiles/" + thailand;
+	String indonesiaFilePath = projectPath + "/uploadFiles/" + indonesia;
+	
+
 	@BeforeClass
 	public void beforeClass() {
 		if (osName.contains("Mac OS")) { // MacOS
@@ -24,29 +35,29 @@ public class Topic_16_Upload_Sendkey {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		
+
 	}
 
 	@Test
 	public void TC_01() {
-		
+		driver.get("https://blueimp.github.io/jQuery-File-Upload/");
 	}
 
 	@Test
 	public void TC_02() {
-		
+
 	}
 
 	@Test
 	public void TC_03() {
-		
+
 	}
 
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
 	}
-	
+
 	public void sleepInSecond(long second) {
 		try {
 			Thread.sleep(second * 1000);
