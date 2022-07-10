@@ -46,6 +46,9 @@ public class Topic_15_Javascript_Executor {
 		hightlightElement("//a[text()='Mobile']");
 		clickToElementByJS("//a[text()='Mobile']");
 
+		hightlightElement("//a[text()=Samsung Galaxy']/parent::h2/following-sibling::div[@class='actions']/button");
+		clickToElementByJS("//a[text()=Samsung Galaxy']/parent::h2/following-sibling::div[@class='actions']/button");
+
 
 
 	}
