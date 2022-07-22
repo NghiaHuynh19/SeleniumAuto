@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c615dc6-225c-4a17-a769-5bde1faa41f3" name="Changes" comment="Update Wait part I">
-      <change afterPath="$PROJECT_DIR$/src/webdriver/Topic_17_Element_Condition_Status.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browserDrivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/browserDrivers/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browserDrivers/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/browserDrivers/msedgedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_15_Javascript_Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_15_Javascript_Executor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_16_Upload_Sendkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_16_Upload_Sendkey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploadFiles/Thailand.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploadFiles/Thailand.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_01_Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_01_Template.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_17_Element_Condition_Status.TC_04_Staleness">
+  <component name="RunManager" selected="TestNG.Topic_21_ExplicitWait.TC_02_Invisible">
     <configuration name="Topic_05_Element_PartII.TC_03" type="TestNG" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
@@ -83,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_17_Element_Condition_Status" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_20_StaticWait.TC_02_Enough" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +87,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_17_Element_Condition_Status" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_20_StaticWait" />
+      <option name="METHOD_NAME" value="TC_02_Enough" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_21_ExplicitWait" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-webdriver-java-testng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_21_ExplicitWait" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -100,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_17_Element_Condition_Status.TC_02_Invisible_Undisplayed_Invisibility_I" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_21_ExplicitWait.TC_01_Not_Enough" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +122,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_17_Element_Condition_Status" />
-      <option name="METHOD_NAME" value="TC_02_Invisible_Undisplayed_Invisibility_I" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_21_ExplicitWait" />
+      <option name="METHOD_NAME" value="TC_01_Not_Enough" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -118,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_17_Element_Condition_Status.TC_03_Presence_I" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_21_ExplicitWait.TC_02_Enough" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -127,8 +140,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_17_Element_Condition_Status" />
-      <option name="METHOD_NAME" value="TC_03_Presence_I" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_21_ExplicitWait" />
+      <option name="METHOD_NAME" value="TC_02_Enough" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,7 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Topic_17_Element_Condition_Status.TC_03_Presence_II" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Topic_21_ExplicitWait.TC_02_Invisible" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-webdriver-java-testng" />
       <extension name="coverage">
         <pattern>
@@ -145,26 +158,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_17_Element_Condition_Status" />
-      <option name="METHOD_NAME" value="TC_03_Presence_II" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_17_Element_Condition_Status.TC_04_Staleness" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-webdriver-java-testng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_17_Element_Condition_Status" />
-      <option name="METHOD_NAME" value="TC_04_Staleness" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_21_ExplicitWait" />
+      <option name="METHOD_NAME" value="TC_02_Invisible" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -174,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Topic_17_Element_Condition_Status.TC_04_Staleness" />
-        <item itemvalue="TestNG.Topic_17_Element_Condition_Status.TC_03_Presence_II" />
-        <item itemvalue="TestNG.Topic_17_Element_Condition_Status.TC_03_Presence_I" />
-        <item itemvalue="TestNG.Topic_17_Element_Condition_Status" />
-        <item itemvalue="TestNG.Topic_17_Element_Condition_Status.TC_02_Invisible_Undisplayed_Invisibility_I" />
+        <item itemvalue="TestNG.Topic_21_ExplicitWait.TC_02_Invisible" />
+        <item itemvalue="TestNG.Topic_21_ExplicitWait" />
+        <item itemvalue="TestNG.Topic_21_ExplicitWait.TC_02_Enough" />
+        <item itemvalue="TestNG.Topic_21_ExplicitWait.TC_01_Not_Enough" />
+        <item itemvalue="TestNG.Topic_20_StaticWait.TC_02_Enough" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657462281256</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update Wait part I">
+      <created>1657462305322</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657462305322</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
